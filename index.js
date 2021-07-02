@@ -34,6 +34,7 @@ const middlewares = jsonServer.defaults();
 server.use(jsonServer.bodyParser);
 
 // Use json-server middlewares
+
 server.use(middlewares);
 
 // configure user storage in memory
