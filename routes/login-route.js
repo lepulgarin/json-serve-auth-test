@@ -10,10 +10,7 @@ module.exports = (userStorage) => {
         const token = jwt.tokenGeneration(session);
         res.status(201).json({
           token: token,
-          user: {
-            name: userStorage.users[0].name,
-            email: userStorage.users[0].email,
-          },
+          user: userStorage.userGet(session),
         });
       } else {
         console.log("Login attempt failed");
