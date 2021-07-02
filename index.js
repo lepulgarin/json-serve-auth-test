@@ -4,7 +4,7 @@ yargs.options({
   port: {
     alias: "p",
     description: "Set port",
-    default: 4000,
+    default: 3000,
   },
   file: {
     alias: "f",
