@@ -7,8 +7,7 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "run": "node index --file=./json-samples/db.json --port=300 --authentication=si",
-    "build": "npm install && node index --file=./json-samples/db.json --port=300 --authentication=si",
-    "runauth": "node index --file=./json-samples/peliculas.json --port=300"
+    "build": "node index.js"
   },
   "repository": {
     "type": "git",
