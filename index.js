@@ -4,7 +4,7 @@ yargs.options({
   port: {
     alias: "p",
     description: "Set port",
-    default: 3000,
+    default: 4000,
   },
   file: {
     alias: "f",
@@ -70,7 +70,7 @@ server.get("/verify", verify);
 
 // Start JSON Server
 server.use(router);
-server.listen(yargs.argv.port, () => {
+server.listen(process.env.PORT || yargs.argv.port, () => {
   console.log(`
 JSON Server is running on port ${yargs.argv.port}
 http://localhost:${yargs.argv.port}

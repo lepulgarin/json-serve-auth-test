@@ -4,6 +4,7 @@
   "description": "JSON Server Package plus JWT Auth",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "run": "node index --file=./json-samples/db.json --port=300 --authentication=si",
     "build": "npm install && node index --file=./json-samples/db.json --port=300 --authentication=si",
